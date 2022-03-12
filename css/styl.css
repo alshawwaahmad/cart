@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .brand {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul#user_info {
+  display: none;
+  align-items: center;
+}
+nav ul#user_info li {
+  position: relative;
+  margin: 0 7px;
+}
+nav ul#user_info .cart-product {
+  position: absolute;
+  width: 200px;
+  transform: translate(-42%, 0);
+  background-color: #eaeaea;
+  top: 40px;
+  padding: 10px;
+  border: 1px solid rgb(20, 255, 40);
+  display: none;
+}
+.cart-product a {
+  color: #fff;
+  margin-top: 15px ;
+  padding: 10px;
+  display: block;
+  background-color: darkgreen;
+  text-align: center;
+
+}
+nav ul#user_info li i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav ul#user_info li .badge {
+  width: 20px;
+  height: 20px;
+  background-color: crimson;
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: -9px;
+  right: -11px;
+  line-height: 20px;
+  display: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+/* *************************form section *****************************************/
+
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  background-color: #bc6ff1;
+}
+
+.section-form h2 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #52057b;
+}
+
+.section-form {
+}
+
+.section-form input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  font-family: "Fredoka", sans-serif;
+  outline: 0;
+}
+
+.section-form input[type="submit"] {
+  font-size: 25px;
+  height: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.section-form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+/* ************product*************** */
+
+.products {
+  width: 60%;
+  margin: 10px 0;
+}
+
+.product-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+.product-item-img {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.product-item-action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.product-item-actions .add-to-cart {
+  display: block;
+  margin-left: auto;
+  background-color: darkgreen;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Fredoka", sans-serif;
+}
+.product-item-actions .favorite {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin: 70px 0 0 150px;
+}
